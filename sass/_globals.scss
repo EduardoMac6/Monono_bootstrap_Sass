@@ -1,0 +1,33 @@
+$white: #fff;
+$black: #000;
+$orange: #FF6C00;
+$orange_2: #CC5600;
+
+@font-face {
+    font-family: Freight_Black;
+    src: url(/assets/font/Freight_Sans_Black_SC.otf);
+}
+
+*{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    font-family: 'Freight_Black';
+}
+
+h3, h4, h5 {
+    font-family: 'Roboto';
+}
+
+h4, h5 {
+    font-size: 16px;
+}
+
+h5{
+    letter-spacing: 25px;
+}
