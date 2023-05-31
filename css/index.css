@@ -25,7 +25,7 @@
   background-color: #CC5600;
 }
 
-.container-menu {
+.nav {
   width: 100%;
   height: 102px;
   background-color: #000;
@@ -38,23 +38,26 @@
   padding: 0 75px;
   color: #fff;
 }
-.container-menu .main-menu li {
+.nav .logo {
+  margin: 0 0 0 50px;
+}
+.nav .menu .main-menu li {
   padding: 20px;
   list-style: none;
   display: inline;
 }
-.container-menu .main-menu li a {
+.nav .menu .main-menu li a {
   color: #fff;
   text-decoration: none;
 }
-.container-menu .main-menu li a:hover {
+.nav .menu .main-menu li a:hover {
   color: #FF6C00;
   text-decoration: underline;
 }
-.container-menu .title-home {
+.nav .monono {
   margin: 0 100px;
 }
-.container-menu .main-menu-rrss li {
+.nav .rrss .main-menu-rrss li {
   list-style: none;
   display: inline;
   padding: 10px;
@@ -62,11 +65,11 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-.container-menu .main-menu-rrss li a {
+.nav .rrss .main-menu-rrss li a {
   color: #fff;
   text-decoration: none;
 }
-.container-menu .main-menu-rrss li a:hover {
+.nav .rrss .main-menu-rrss li a:hover {
   color: #FF6C00;
   text-decoration: underline;
 }
