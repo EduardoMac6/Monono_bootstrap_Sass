@@ -61,7 +61,7 @@ $orange_2: #CC5600;
         li{
             padding: 20px;
             list-style: none;
-            display: inline;
+            display: inline-block;
             a{
                 color: $white;
                 text-decoration: none;
@@ -105,25 +105,46 @@ $orange_2: #CC5600;
     }
 }
 
+.footer{
+    background-color: $black;
+    .text_footer{
+        margin: 0;
+        padding: 10px;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+}
+
+// Home
 .img_background_monono{
-    background: url(/assets/img/backgound_perrito.png);
+    background-image: url(/assets/img/backgound_perrito.png);
     background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
     height: calc(100vh - 118px);
 }
 
+// Shop
 .container_shop{
     display: flex;
     justify-content: space-between;
     .img_background{
-        background: url(/assets/img/backgound_coffee.png);
+        // background: url(/assets/img/backgound_coffee.png);
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center center;
         width: calc(100vh - 100px);
-
-
     }
     .info{
+        width: 100%;
         .title_3{
             padding: 10px;
             text-align: center;
@@ -131,14 +152,13 @@ $orange_2: #CC5600;
         }
         .product-shop{
             display: flex;
+            justify-content: center;
+            height: 50vh;
             .feature{
                 padding: 10px 50px;
                 .coffe-sale{
                     text-decoration: none;
                     color: $black;
-                    .img_product{
-                        width: 80%;
-                    }
                     .description{
                         text-align: center;
                         .title_2{
@@ -154,6 +174,7 @@ $orange_2: #CC5600;
         }
         .section_map{
             background-color: $black;
+            height: 50vh;
             .title_3{
                 color: $white;
                 padding: 20px;
@@ -166,18 +187,5 @@ $orange_2: #CC5600;
                 border-radius: 10px;
             }
         }
-    }
-}
-
-
-.footer{
-    background-color: $black;
-    .text_footer{
-        margin: 0;
-        padding: 10px;
-        color: $white;
-        display: flex;
-        justify-content: center;
-        font-size: 12px;
     }
 }

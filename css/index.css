@@ -48,7 +48,7 @@
 .nav .menu .main-menu li {
   padding: 20px;
   list-style: none;
-  display: inline;
+  display: inline-block;
 }
 .nav .menu .main-menu li a {
   color: #fff;
@@ -85,10 +85,29 @@
   text-decoration: underline;
 }
 
+.footer {
+  background-color: #000;
+}
+.footer .text_footer {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
 .img_background_monono {
-  background: url(/assets/img/backgound_perrito.png);
+  background-image: url(/assets/img/backgound_perrito.png);
   background-position: center bottom;
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
   height: calc(100vh - 118px);
 }
 
@@ -97,10 +116,13 @@
   justify-content: space-between;
 }
 .container_shop .img_background {
-  background: url(/assets/img/backgound_coffee.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   width: calc(100vh - 100px);
+}
+.container_shop .info {
+  width: 100%;
 }
 .container_shop .info .title_3 {
   padding: 10px;
@@ -109,6 +131,8 @@
 }
 .container_shop .info .product-shop {
   display: flex;
+  justify-content: center;
+  height: 50vh;
 }
 .container_shop .info .product-shop .feature {
   padding: 10px 50px;
@@ -116,9 +140,6 @@
 .container_shop .info .product-shop .feature .coffe-sale {
   text-decoration: none;
   color: #000;
-}
-.container_shop .info .product-shop .feature .coffe-sale .img_product {
-  width: 80%;
 }
 .container_shop .info .product-shop .feature .coffe-sale .description {
   text-align: center;
@@ -132,6 +153,7 @@
 }
 .container_shop .info .section_map {
   background-color: #000;
+  height: 50vh;
 }
 .container_shop .info .section_map .title_3 {
   color: #fff;
@@ -145,24 +167,13 @@
   border-radius: 10px;
 }
 
-.footer {
-  background-color: #000;
-}
-.footer .text_footer {
-  margin: 0;
-  padding: 10px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  font-size: 12px;
-}
-
 @font-face {
   font-family: Freight_Black;
   src: url(/assets/font/Freight_Sans_Black_SC.otf);
 }
-* {
+body {
   margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
