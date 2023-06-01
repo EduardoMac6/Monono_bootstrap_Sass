@@ -115,6 +115,7 @@
   display: flex;
 }
 .container_shop .img_background {
+  width: 634px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
