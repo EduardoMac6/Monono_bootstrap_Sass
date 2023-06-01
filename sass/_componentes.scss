@@ -135,16 +135,14 @@ $orange_2: #CC5600;
 // Shop
 .container_shop{
     display: flex;
-    justify-content: space-between;
     .img_background{
-        // background: url(/assets/img/backgound_coffee.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        width: calc(100vh - 100px);
     }
     .info{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
         .title_3{
             padding: 10px;
             text-align: center;
