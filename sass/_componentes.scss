@@ -77,7 +77,10 @@ $orange_2: #CC5600;
     }
 
     .monono{
-        margin: 0 100px;
+        padding: 0 100px;
+        .title-home{
+            font-size: 29px;
+        }
     }
 
     .rrss{
@@ -111,28 +114,36 @@ $orange_2: #CC5600;
 
 .container_shop{
     display: flex;
+    justify-content: space-between;
     .img_background{
         background: url(/assets/img/backgound_coffee.png);
         background-size: cover;
         background-position: center center;
-        height: 100vh;
-        width: 50%;
+        width: calc(100vh - 100px);
+
+
     }
     .info{
         .title_3{
+            padding: 10px;
             text-align: center;
+            font-size: 40px;
         }
         .product-shop{
             display: flex;
             .feature{
-                padding: 50px;
+                padding: 10px 50px;
                 .coffe-sale{
                     text-decoration: none;
                     color: $black;
+                    .img_product{
+                        width: 80%;
+                    }
                     .description{
                         text-align: center;
                         .title_2{
                         font-size: 23px;
+                        padding: 5px 0;
                         }
                         .price{
                         font-size: 16px;
@@ -150,6 +161,9 @@ $orange_2: #CC5600;
             .mapa{
                 display: flex;
                 justify-content: center;
+            }
+            .gmap_iframe{
+                border-radius: 10px;
             }
         }
     }
