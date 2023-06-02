@@ -17,8 +17,11 @@
   font-weight: 500;
   font-size: 20px;
 }
-.btn-main img {
-  margin: 0 0 0 10px;
+.btn-main .idioma {
+  margin: 0 10px 0 0;
+}
+.btn-main .icon_btn {
+  margin: 0 5px 0 0;
 }
 
 .btn-main:hover {
@@ -158,6 +161,50 @@
   color: #fff;
 }
 .container_shop .info .section_map .mapa_google {
+  margin: 40px 0 10px 0;
+  border-radius: 20px;
+}
+
+.container_menu {
+  display: flex;
+}
+.container_menu .img_background_menu {
+  width: 634px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.container_menu .info_menu {
+  background-image: url(/assets/img/backgound_menu_1.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container_menu .info_menu .btn_section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container_menu .info_menu .btn_section .buttons {
+  margin: 100px 10px;
+  text-align: center;
+  color: #fff;
+}
+.container_menu .info_menu .btn_section .t {
+  border-left: 2px solid #fff;
+  height: 200px;
+  left: 50%;
+}
+.container_menu .info_menu .section_map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container_menu .info_menu .section_map .title_3 {
+  color: #fff;
+}
+.container_menu .info_menu .section_map .mapa_google {
   margin: 40px 0 10px 0;
   border-radius: 20px;
 }
