@@ -142,48 +142,47 @@ $orange_2: #CC5600;
         background-position: center center;
     }
     .info{
+        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         .title_3{
-            padding: 10px;
             text-align: center;
+            margin: 20px 0;
             font-size: 40px;
         }
         .product-shop{
             display: flex;
-            justify-content: center;
-            height: 50vh;
+            justify-content: space-around;
+            gap: 30px;
             .feature{
-                padding: 10px 50px;
                 .coffe-sale{
                     text-decoration: none;
                     color: $black;
                     .description{
                         text-align: center;
                         .title_2{
-                        font-size: 23px;
-                        padding: 5px 0;
+                            font-size: 23px;
                         }
                         .price{
-                        font-size: 16px;
+                            font-size: 16px;
                         }
                     }
                 }
             }
         }
         .section_map{
-            background-color: $black;
-            height: 50vh;
+            padding: 10px 0;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .title_3{
+                padding: 20px 0;
                 color: $white;
-                padding: 20px;
             }
-            .mapa{
-                display: flex;
-                justify-content: center;
-            }
-            .gmap_iframe{
-                border-radius: 10px;
+            .mapa_google{
+                border-radius: 20px;
             }
         }
     }

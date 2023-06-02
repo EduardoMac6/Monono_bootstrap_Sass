@@ -121,21 +121,20 @@
   background-position: center center;
 }
 .container_shop .info {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .container_shop .info .title_3 {
-  padding: 10px;
   text-align: center;
+  margin: 20px 0;
   font-size: 40px;
 }
 .container_shop .info .product-shop {
   display: flex;
-  justify-content: center;
-  height: 50vh;
-}
-.container_shop .info .product-shop .feature {
-  padding: 10px 50px;
+  justify-content: space-around;
+  gap: 30px;
 }
 .container_shop .info .product-shop .feature .coffe-sale {
   text-decoration: none;
@@ -146,25 +145,23 @@
 }
 .container_shop .info .product-shop .feature .coffe-sale .description .title_2 {
   font-size: 23px;
-  padding: 5px 0;
 }
 .container_shop .info .product-shop .feature .coffe-sale .description .price {
   font-size: 16px;
 }
 .container_shop .info .section_map {
+  padding: 10px 0;
   background-color: #000;
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container_shop .info .section_map .title_3 {
+  padding: 20px 0;
   color: #fff;
-  padding: 20px;
 }
-.container_shop .info .section_map .mapa {
-  display: flex;
-  justify-content: center;
-}
-.container_shop .info .section_map .gmap_iframe {
-  border-radius: 10px;
+.container_shop .info .section_map .mapa_google {
+  border-radius: 20px;
 }
 
 @font-face {
