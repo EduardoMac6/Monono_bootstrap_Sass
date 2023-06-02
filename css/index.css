@@ -65,16 +65,14 @@
 .nav .monono .title-home {
   font-size: 29px;
 }
-.nav .rrss {
+.nav .rrss .main-menu-rrss {
   margin: 0;
+  display: flex;
 }
 .nav .rrss .main-menu-rrss li {
+  padding: 20px;
   list-style: none;
-  display: inline;
-  padding: 10px;
-  font-family: "Roboto";
-  text-transform: uppercase;
-  font-weight: 500;
+  display: inline-block;
 }
 .nav .rrss .main-menu-rrss li a {
   color: #fff;
@@ -83,6 +81,7 @@
 .nav .rrss .main-menu-rrss li a:hover {
   color: #FF6C00;
   text-decoration: underline;
+  font-weight: 900;
 }
 
 .footer {
