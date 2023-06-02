@@ -148,13 +148,13 @@ $orange_2: #CC5600;
         justify-content: space-between;
         .title_3{
             text-align: center;
-            margin: 20px 0;
+            margin: 20px 0 0 0;
             font-size: 40px;
         }
         .product-shop{
             display: flex;
             justify-content: space-around;
-            gap: 30px;
+            // gap: 30px;
             .feature{
                 .coffe-sale{
                     text-decoration: none;
@@ -178,10 +178,10 @@ $orange_2: #CC5600;
             flex-direction: column;
             align-items: center;
             .title_3{
-                padding: 20px 0;
                 color: $white;
             }
             .mapa_google{
+                margin: 40px 0 10px 0;
                 border-radius: 20px;
             }
         }

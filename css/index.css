@@ -128,13 +128,12 @@
 }
 .container_shop .info .title_3 {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   font-size: 40px;
 }
 .container_shop .info .product-shop {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
 }
 .container_shop .info .product-shop .feature .coffe-sale {
   text-decoration: none;
@@ -157,10 +156,10 @@
   align-items: center;
 }
 .container_shop .info .section_map .title_3 {
-  padding: 20px 0;
   color: #fff;
 }
 .container_shop .info .section_map .mapa_google {
+  margin: 40px 0 10px 0;
   border-radius: 20px;
 }
 
