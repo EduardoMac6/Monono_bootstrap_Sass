@@ -70,7 +70,13 @@ $orange_2: #CC5600;
                     text-decoration: none;
                 }
 
-                a:hover{
+                // a:hover{
+                //     color: $orange;
+                //     text-decoration: underline;
+                //     font-weight: 900;
+                // }
+
+                a.active, a:hover{
                     color: $orange;
                     text-decoration: underline;
                     font-weight: 900;
