@@ -34,7 +34,7 @@
   background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: 500;
@@ -66,11 +66,12 @@
   padding: 0 100px;
 }
 .nav .monono .title-home {
-  font-size: 29px;
+  font-size: 48px;
 }
 .nav .rrss .main-menu-rrss {
   margin: 0;
   display: flex;
+  justify-content: flex-end;
 }
 .nav .rrss .main-menu-rrss li {
   padding: 20px;
