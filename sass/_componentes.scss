@@ -48,13 +48,27 @@ $orange_2: #CC5600;
     background-color: #000;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     @include FONT-Roboto();
     padding: 0 75px;
     color: $white;
 
+    #check{
+        display: none;
+    }
+
     .logo{
         margin: 0 0 0 50px;
+        display: flex;
+        .menu_ham{
+            margin-left: 50px;
+            .check_btn{
+                margin: 0;
+                width: 45px;
+                cursor: pointer;
+                // display: none;
+            }
+        }
     }
 
     .menu{
@@ -89,12 +103,12 @@ $orange_2: #CC5600;
     .rrss{
         .main-menu-rrss{
             margin: 0;
+            gap: 30px;
             display: flex;
             justify-content: flex-end;
             li{
-                padding: 20px;
+                padding: auto;
                 list-style: none;
-                display: inline-block;
                 a{
                     color: $white;
                     text-decoration: none;
@@ -304,4 +318,97 @@ $orange_2: #CC5600;
             background-position: center center;
         }
     }
+}
+
+// responsive
+
+@media (max-width:1452px){
+    .nav{
+        
+        .main-menu{
+            font-size: 12px;
+        }
+        .monono{
+            .title-home{
+                font-size: 40px;
+            }
+        }
+        .rrss{
+            .main-menu-rrss{
+                padding: 0;
+                font-size: 12px;                
+            }
+        }
+    }
+}
+
+@media (max-width:1210px){
+    .check_btn{
+        display: block;
+    }
+    .menu{
+        ul{
+            position: fixed;
+            width: 1209px;
+            height: calc(100vh - 118px);
+            background: $orange_2;
+            top: 80px;
+            right:100%;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        li a:hover, li a.active{
+            background: none;
+            color: $black;
+        }
+        #check:checked ~ ul{
+            right: 0px;
+        } 
+    
+        .main-menu{
+            flex-direction: column;
+        }
+    }
+
+
+    // .nav{
+    //     .check_btn{
+    //         display: block;
+    //     }
+    //     .icon_mono{
+    //         display: none;
+    //     }
+    //     .menu{
+    //         .main-menu{
+    //         }
+    //         ul{
+    //             position: fixed;
+    //             flex-direction: column;
+    //             width: 1210px;
+    //             height: 1680px;
+    //             top: 80px;
+    //             background-color: $black;
+    //             transition: all .5s;
+    //             left: 100%;
+    //             li{
+    //                 display: block;
+    //                 margin: 50px;
+    //                 line-height: 30px;
+    //             }
+    //             a{
+    //                 font-size: 50px;
+    //             }
+    //             #check:checked ~ ul{
+    //                 left: 0;
+    //             }
+    //         }
+    //     }
+    // }
 }
